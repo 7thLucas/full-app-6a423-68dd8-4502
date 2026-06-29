@@ -1,0 +1,69 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-7">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Measurable Impact</span>
+      <h2 class="text-4xl font-extrabold mt-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif; letter-spacing: -0.02em;">What Learners Gain</h2>
+    </div>
+
+    <!-- Metric Cards -->
+    <div class="sl-metrics grid gap-4 mb-5">
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Pronunciation</p>
+        <p class="text-3xl font-extrabold" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">+34%</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Score improvement over 4 weeks of 5 sessions/week</p>
+      </div>
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Vocabulary</p>
+        <p class="text-3xl font-extrabold" style="color: #10B981; font-family: {{config.font.headingFont}}, sans-serif;">200+</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">New words learned in context per month</p>
+      </div>
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Cost Saving</p>
+        <p class="text-3xl font-extrabold" style="color: #F59E0B; font-family: {{config.font.headingFont}}, sans-serif;">$600+</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Saved vs. private tutor at $30/hr × 20 sessions/month</p>
+      </div>
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Availability</p>
+        <p class="text-3xl font-extrabold" style="color: #8B5CF6; font-family: {{config.font.headingFont}}, sans-serif;">24 / 7</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">No scheduling — practice the moment motivation strikes</p>
+      </div>
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Consistency</p>
+        <p class="text-3xl font-extrabold" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">3×</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Higher weekly practice rate vs. uncoached self-study</p>
+      </div>
+
+      <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Confidence</p>
+        <p class="text-3xl font-extrabold" style="color: #10B981; font-family: {{config.font.headingFont}}, sans-serif;">↑ Fast</p>
+        <p class="text-xs mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Judgment-free environment breaks the silence spiral quickly</p>
+      </div>
+
+    </div>
+
+    <!-- ROI Summary Block -->
+    <div class="rounded-2xl p-6 flex items-center justify-between" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #7C3AED 100%);">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">Private tutor vs. {{config.appName}}</p>
+        <p class="text-xl font-bold" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">Same progress. 95% lower cost. No scheduling.</p>
+      </div>
+      <div class="text-right flex-shrink-0 ml-6">
+        <p class="text-4xl font-extrabold" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">95%</p>
+        <p class="text-xs" style="color: rgba(255,255,255,0.75); font-family: {{config.font.textFont}}, sans-serif;">cost reduction</p>
+      </div>
+    </div>
+
+  </div>
+</section>
