@@ -1,0 +1,70 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">North Star Metric</span>
+      <h2 class="text-4xl font-extrabold mt-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif; letter-spacing: -0.02em;">Weekly Verified Operations</h2>
+      <p class="text-sm mt-2" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Projected impact — based on your inputs</p>
+    </div>
+
+    <div class="sl-layout flex flex-1 min-h-0">
+
+      <!-- Left: Operation definition + WVO -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Verified Operation</p>
+          <p class="text-base font-bold mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">AI Speaking Session Completed</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">A learner completes a full voice conversation with the AI tutor and receives a feedback report. Excludes logins, page views, and incomplete sessions.</p>
+        </div>
+
+        <!-- WVO Formula -->
+        <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Weekly Volume Formula</p>
+          <div class="flex flex-wrap items-center gap-2 text-sm font-medium" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="px-2 py-1 rounded-lg" style="background-color: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}};">Active users <em class="not-italic font-normal text-xs" style="color: {{config.brandColor.mutedForeground}};">— Assumption, adjust</em></span>
+            <span>×</span>
+            <span class="px-2 py-1 rounded-lg" style="background-color: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}};">5 sessions / user / week</span>
+            <span>=</span>
+            <span class="px-3 py-1 rounded-lg font-extrabold text-base" style="background-color: {{config.brandColor.primary}}; color: #FFFFFF;">N × 5 sessions / week</span>
+          </div>
+          <p class="text-xs mt-3 italic" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Example: 500 active learners × 5 sessions = <strong style="color: {{config.brandColor.foreground}};">2,500 verified operations / week</strong></p>
+        </div>
+
+      </div>
+
+      <!-- Right: Value & ROI -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <!-- Value per operation -->
+        <div class="rounded-2xl p-5" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Value per Session</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Private tutor equivalent: $30–50/hr. One AI session ≈ 30 min of tutor time. Value per completed session = <strong style="color: {{config.brandColor.foreground}};">~$15–25</strong> in replaced tutor cost.</p>
+        </div>
+
+        <!-- Total projected value -->
+        <div class="rounded-2xl p-6 flex flex-col gap-1" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #7C3AED 100%);">
+          <p class="text-xs font-semibold uppercase tracking-wide" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">Projected Annual Learner Value</p>
+          <p class="text-xs mt-1 mb-3" style="color: rgba(255,255,255,0.65); font-family: {{config.font.textFont}}, sans-serif;">2,500 sessions/wk × $15 saved/session × 52 weeks</p>
+          <p class="text-4xl font-extrabold" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">$1.95M</p>
+          <p class="text-xs" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">in replaced private-tutor cost / year at 500 active learners</p>
+          <div class="mt-3 px-3 py-1 rounded-full text-xs inline-block self-start" style="background-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.85); font-family: {{config.font.textFont}}, sans-serif;">Assumption — adjust active-user count above</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
