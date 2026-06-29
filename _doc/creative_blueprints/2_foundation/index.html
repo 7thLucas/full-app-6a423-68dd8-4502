@@ -1,0 +1,73 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-half { width: 50%; }
+  .mode-portrait .sl-half { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">The Case for {{config.appName}}</span>
+      <h2 class="text-4xl font-extrabold mt-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif; letter-spacing: -0.02em;">Problem → Solution</h2>
+    </div>
+
+    <div class="sl-layout flex flex-1 min-h-0">
+
+      <!-- Problem -->
+      <div class="sl-half flex flex-col rounded-2xl p-8" style="background-color: #FEF2F2; border: 1px solid #FECACA;">
+        <div class="flex items-center gap-2 mb-5">
+          <span class="text-2xl">⚠️</span>
+          <h3 class="text-lg font-bold" style="color: #991B1B; font-family: {{config.font.headingFont}}, sans-serif;">The Problem</h3>
+        </div>
+        <ul class="space-y-4 flex-1">
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: #FCA5A5; color: #7F1D1D;">1</span>
+            <p class="text-sm leading-relaxed" style="color: #1E293B; font-family: {{config.font.textFont}}, sans-serif;"><strong>Private tutors cost $30–50/hr</strong> — consistent daily practice is unaffordable for most learners</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: #FCA5A5; color: #7F1D1D;">2</span>
+            <p class="text-sm leading-relaxed" style="color: #1E293B; font-family: {{config.font.textFont}}, sans-serif;"><strong>Existing apps skip speaking</strong> — they train reading and writing, not the skill that matters most in daily life</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: #FCA5A5; color: #7F1D1D;">3</span>
+            <p class="text-sm leading-relaxed" style="color: #1E293B; font-family: {{config.font.textFont}}, sans-serif;"><strong>Fear creates a silence spiral</strong> — no judgment-free environment to make mistakes and grow</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: #FCA5A5; color: #7F1D1D;">4</span>
+            <p class="text-sm leading-relaxed" style="color: #1E293B; font-family: {{config.font.textFont}}, sans-serif;"><strong>Zero real-time feedback</strong> — learners don't know if their pronunciation or grammar is actually improving</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-half flex flex-col rounded-2xl p-8" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #7C3AED 100%);">
+        <div class="flex items-center gap-2 mb-5">
+          <span class="text-2xl">✨</span>
+          <h3 class="text-lg font-bold" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">The Solution</h3>
+        </div>
+        <ul class="space-y-4 flex-1">
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: rgba(255,255,255,0.25); color: #FFFFFF;">✓</span>
+            <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.92); font-family: {{config.font.textFont}}, sans-serif;"><strong style="color:#FFFFFF;">Private-tutor quality at zero cost per session</strong> — unlimited AI voice conversations, no scheduling</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: rgba(255,255,255,0.25); color: #FFFFFF;">✓</span>
+            <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.92); font-family: {{config.font.textFont}}, sans-serif;"><strong style="color:#FFFFFF;">Speaking-first design</strong> — every session is a real voice conversation with instant pronunciation, grammar, and vocabulary feedback</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: rgba(255,255,255,0.25); color: #FFFFFF;">✓</span>
+            <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.92); font-family: {{config.font.textFont}}, sans-serif;"><strong style="color:#FFFFFF;">Patient, judgment-free AI</strong> — corrects without embarrassing; adapts difficulty to the learner's level</p>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style="background-color: rgba(255,255,255,0.25); color: #FFFFFF;">✓</span>
+            <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.92); font-family: {{config.font.textFont}}, sans-serif;"><strong style="color:#FFFFFF;">AI Coach keeps learners consistent</strong> — proactive reminders, milestones, and personalized exercises prevent drop-off</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
