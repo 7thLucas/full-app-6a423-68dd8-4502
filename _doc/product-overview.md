@@ -1,59 +1,89 @@
-Build an AI English Speaking Tutor that helps users improve their spoken English through natural conversations, personalized feedback, and interactive speaking exercises.
+# AI English Speaking Tutor — Product Overview
 
-The app should feel like having a private English tutor available anytime. Users can practice speaking with an AI through voice conversations, and the AI will provide instant feedback on pronunciation, grammar, vocabulary, fluency, and confidence.
+## Identity
+- **Working Name**: SpeakUp AI *(final name pending user confirmation)*
+- **Category**: AI Language Learning / EdTech SaaS
+- **Tagline**: Your private English tutor, available anytime.
+- **Type**: Consumer / Prosumer SaaS
 
-When users first join, they complete a short assessment to determine their English proficiency level (Beginner, Intermediate, or Advanced), learning goals, and areas they want to improve, such as daily conversation, business English, travel, interviews, presentations, or exam preparation.
+---
 
-The AI tutor should create a personalized learning plan and continuously adapt lessons based on the user's progress.
+## The Problem
+Non-native English speakers struggle to improve spoken fluency because:
+- Private tutors cost $30–50/hr — consistent practice is unaffordable
+- Most language apps focus on reading and writing, not speaking
+- Learners have no patient, judgment-free conversation partner
+- Real-time pronunciation and grammar feedback is nearly absent in existing tools
+- Fear of embarrassment prevents people from speaking, creating a confidence spiral
 
-Users should be able to:
-- Practice real-life conversations with the AI using voice
-- Choose conversation topics based on their interests
-- Complete daily speaking exercises
-- Practice common situations such as ordering food, traveling, business meetings, job interviews, and presentations
-- Learn new vocabulary in context
-- Review previous conversations and feedback
-- Track their learning progress over time
+---
 
-The AI English Tutor should act as a patient, encouraging teacher that can:
-- Hold natural voice conversations
-- Correct pronunciation without interrupting the conversation
-- Explain grammar mistakes in simple language
-- Suggest more natural or fluent ways to express ideas
-- Introduce new vocabulary based on the conversation
-- Adjust the difficulty according to the user's level
-- Answer English-related questions at any time
-- Encourage users to speak more confidently
+## The Solution
+An AI-powered English Speaking Tutor that delivers private-tutor quality at zero marginal cost per session.
 
-The platform should also include AI Coach Notifications that proactively help users stay consistent with their learning. The AI should send personalized reminders and recommendations, including:
+**Core value proposition:**
+- Real-time voice conversations with instant feedback (pronunciation, grammar, vocabulary, fluency, confidence)
+- Personalized learning path adapted to proficiency level and goals
+- AI Coach that maintains learning consistency through proactive notifications
+- Practice anytime — no scheduling, no judgment
+
+---
+
+## Target Users
+Non-native English speakers across all proficiency levels:
+- **Beginners**: building basic conversation confidence from scratch
+- **Intermediate learners**: targeting fluency, natural expression, vocabulary expansion
+- **Advanced speakers**: refining for professional/academic contexts (interviews, presentations, exams)
+
+**Use-case verticals**: daily conversation, business English, travel, job interviews, academic presentations, exam preparation
+
+---
+
+## Core Features
+
+### 1. Onboarding & Assessment
+- Short proficiency assessment → Beginner / Intermediate / Advanced placement
+- Learning goals selection: daily conversation, business English, travel, interviews, presentations, exam prep
+- Personalized learning plan auto-generated from assessment results
+
+### 2. AI Voice Conversation Tutor
+- Real-time voice conversations with AI tutor
+- Non-interrupting correction style (feedback delivered without breaking conversation flow)
+- Instant post-turn feedback: pronunciation score, grammar issues, vocabulary suggestions, fluency rating
+- Grammar explained in simple language
+- More natural phrasing suggestions ("here's how a native speaker would say that")
+- AI adjusts difficulty dynamically based on user performance
+
+### 3. Speaking Scenarios
+- Role-play scenarios: ordering food, traveling, business meetings, job interviews, presentations, daily chat
+- Topic selection based on learner interests
+- Daily speaking exercises and challenges
+- Vocabulary learned in context during conversations
+
+### 4. Progress & Analytics
+- Speaking streak tracker
+- Pronunciation score (per session and trend)
+- Grammar improvement score
+- Vocabulary growth metric (words learned and retained)
+- Conversation history with session reviews
+- Achievement badges for milestones
+
+### 5. AI Coach Notifications
 - Daily speaking practice reminders
-- Weekly learning summaries
-- Vocabulary review reminders
+- Weekly learning summary
+- Vocabulary review nudges
 - Pronunciation practice suggestions
-- Progress milestones and achievements
+- Progress milestone alerts
 - Personalized exercises based on previous mistakes
-- Motivation messages after periods of inactivity
+- Re-engagement messages after inactivity
+- Full user-controlled notification preferences (per-type enable/disable + frequency)
 
-Users should have full control over notification preferences, allowing them to enable or disable each reminder type and choose how often they receive notifications.
-
-Key Features:
-- AI voice conversation tutor
-- Personalized learning path
-- Speaking practice scenarios
-- Pronunciation feedback
-- Grammar and vocabulary coaching
-- Conversation history
-- Daily practice challenges
-- Progress tracking
-- Achievement badges
-- AI Coach Notifications
-
-Dashboard:
-The dashboard should motivate users to practice consistently and clearly show their improvement. It should include:
-- Daily speaking goal
-- Current English proficiency level
+### 6. Dashboard
+Motivating command center showing:
+- Daily speaking goal progress
+- Current proficiency level
 - Speaking streak
-- Weekly learning progress
+- Weekly learning progress chart
 - Pronunciation score
 - Grammar improvement score
 - Vocabulary growth
@@ -61,6 +91,30 @@ The dashboard should motivate users to practice consistently and clearly show th
 - Upcoming practice recommendations
 - AI insights and personalized learning tips
 
-The application should feature a modern, friendly, and motivating design inspired by today's best language-learning apps. It should use colorful progress indicators, achievement badges, interactive lesson cards, conversation history, and engaging animations to make learning enjoyable.
+---
 
-The goal is to make English speaking practice accessible, personalized, and confidence-building by combining conversational AI, continuous feedback, and adaptive learning into one immersive experience.
+## Design Principles
+- Modern, friendly, motivating — inspired by top language-learning apps
+- Colorful progress indicators, achievement badges, interactive lesson cards
+- Engaging animations for milestones and streak completions
+- Encouraging, patient, non-judgmental AI persona throughout
+
+## Brand & Tone
+- Warm, encouraging, celebratory
+- Patient and supportive — never condescending
+- Simple explanations over jargon
+- Confidence-building language at every touchpoint
+
+## Strategic Principles
+1. **Accessibility** — Practice anytime, no scheduling, no cost per session
+2. **Personalization** — Adaptive learning, not one-size-fits-all
+3. **Confidence-building** — AI persona is patient, encouraging, judgment-free
+4. **Consistency** — AI coaching keeps learners engaged and on track daily
+
+---
+
+## North Star Metric
+**Weekly Verified Operations**: AI Speaking Sessions Completed
+- One session = a learner completes a full voice conversation with the AI and receives feedback
+- Clicks, logins, and page views are excluded
+- Target: 5 sessions per active learner per week
