@@ -1,0 +1,57 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-visual { width: 45%; height: 100%; }
+  .mode-portrait .sl-visual { width: 100%; height: 40%; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-portrait .sl-content { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-center p-12" style="background-color: #ffffff;">
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-2 mb-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-widest uppercase" style="background-color: {{config.brandColor.secondary}}; color: {{config.brandColor.secondaryForeground}}; font-family: {{config.font.textFont}}, sans-serif;">AI Language Learning</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="font-extrabold leading-none mb-4" style="font-size: 3.2rem; color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif; letter-spacing: -0.02em;">{{config.appName}}</h1>
+
+      <!-- Tagline -->
+      <p class="text-xl font-medium mb-8" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.tagline}}</p>
+
+      <!-- Sub-description -->
+      <p class="text-base leading-relaxed max-w-md" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Voice conversations. Instant feedback. A personalized plan that adapts as you grow — no tutor fees, no scheduling.</p>
+
+      <!-- Proof chips -->
+      <div class="flex flex-wrap gap-2 mt-8">
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">🎙️ Voice AI Tutor</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">📊 Adaptive Learning</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">🏆 Progress Tracking</span>
+      </div>
+
+      <!-- Attribution -->
+      <div class="mt-auto pt-10">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden flex items-center justify-center" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #7C3AED 100%);">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=A%20friendly%20AI%20English%20tutor%20interface%20showing%20a%20voice%20waveform%2C%20speech%20bubbles%2C%20and%20pronunciation%20score%20cards%20on%20a%20vibrant%20indigo%20background%2C%20modern%20minimal%20illustration%20style"
+        alt="SpeakUp AI Tutor Interface"
+        class="w-full h-full object-cover opacity-90"
+      />
+      <!-- Overlay badge -->
+      <div class="absolute bottom-8 left-8 right-8 rounded-2xl p-4" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.25);">
+        <p class="text-sm font-semibold" style="color: #FFFFFF; font-family: {{config.font.textFont}}, sans-serif;">Pronunciation score improved by 34% in 4 weeks</p>
+        <p class="text-xs mt-1" style="color: rgba(255,255,255,0.75); font-family: {{config.font.textFont}}, sans-serif;">Based on 5 sessions/week — Intermediate learner path</p>
+      </div>
+    </div>
+
+  </div>
+</section>
