@@ -1,0 +1,65 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">What It Does</span>
+      <h2 class="text-4xl font-extrabold mt-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif; letter-spacing: -0.02em;">Core Features</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-6">
+      <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.primary}}; color: #FFFFFF; font-family: {{config.font.textFont}}, sans-serif;">🎓 All Levels</span>
+      <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">💼 Professionals</span>
+      <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">✈️ Travelers</span>
+      <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="background-color: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">🎯 Exam Prep</span>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="sl-grid grid gap-4 flex-1 min-h-0">
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🎙️</span>
+        <h4 class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">AI Voice Conversations</h4>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Real-time voice chat with a patient AI tutor. Corrections delivered without breaking conversation flow.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">📋</span>
+        <h4 class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Personalized Learning Plan</h4>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Proficiency assessment on sign-up. Plan adapts to your level, goals, and real-time progress.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🎭</span>
+        <h4 class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Speaking Scenarios</h4>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Role-play real situations: job interviews, business meetings, ordering food, travel, presentations.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🔊</span>
+        <h4 class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">Instant Feedback Engine</h4>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Per-turn scores for pronunciation, grammar, vocabulary, and fluency with plain-language explanations.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🤖</span>
+        <h4 class="font-bold text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">AI Coach Notifications</h4>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Daily reminders, weekly summaries, streak nudges, and re-engagement messages. Fully user-controlled.</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #7C3AED 100%);">
+        <span class="text-2xl">📈</span>
+        <h4 class="font-bold text-sm" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">Progress Dashboard</h4>
+        <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.85); font-family: {{config.font.textFont}}, sans-serif;">Streak, pronunciation trend, grammar score, vocabulary growth, achievement badges — at a glance.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
